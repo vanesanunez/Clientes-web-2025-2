@@ -1,15 +1,18 @@
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
     name: 'AppNavbar',
 }
 </script>
 
 <template>
-    <nav class="">
+    <nav class="flex items-center p-4 gap-8 bg-violet-700 text-white">
+        <RouterLink class="text-xl" to="/">Red social</RouterLink>
         <div>
-            <ul>
+            <ul class="flex gap-4">
                 <li>
-                    <RouterLink class="nav-link" to="/">Home</RouterLink>
+                    <RouterLink class="nav-link" to="/">Inicio</RouterLink>
                 </li>
                 <li>
                     <RouterLink class="nav-link" to="/chat">Chat general</RouterLink>
