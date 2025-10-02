@@ -1,11 +1,14 @@
 <script>
+import AppH1 from '../components/AppH1.vue';
+
 export default {
     name: 'Register',
+    components: {AppH1},
 }
 </script>
 
 <template>
-    <h1>Crear una nueva cuenta</h1>
+    <AppH1>Crear una nueva cuenta</AppH1>
 
     <form action="#">
         <div>

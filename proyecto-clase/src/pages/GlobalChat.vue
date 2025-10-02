@@ -1,9 +1,12 @@
 <script>
+import AppH1 from '../components/AppH1.vue';
+
 export default {
     name: 'GlobalChat',
+    components: {AppH1},
 }
 </script>
 
 <template>
-    <h1>Chat general</h1>
+    <AppH1>Chat general</AppH1>
 </template>

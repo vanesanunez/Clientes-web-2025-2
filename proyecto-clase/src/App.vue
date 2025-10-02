@@ -12,7 +12,7 @@ export default {
 
 <template>
     <AppNavbar />
-    <main>
+    <main class="container mx-auto p-4">
         <RouterView />
     </main>
     <AppFooter />
