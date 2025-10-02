@@ -1,6 +1,5 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router';
-import Home from './pages/Home.vue';
 import AppNavbar from './components/AppNavbar.vue';
 import AppFooter from './components/AppFooter.vue';
 
