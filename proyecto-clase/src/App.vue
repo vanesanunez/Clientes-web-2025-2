@@ -1,35 +1,20 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router';
 import Home from './pages/Home.vue';
+import AppNavbar from './components/AppNavbar.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
-    name: 'App', 
-    components: { Home }, 
+    name: 'App',
+    components: { AppNavbar, AppFooter },
 
 }
 </script>
 
 <template>
-<nav>
-    <div>
-        <ul>
-            <li>
-                <RouterLink class="nav-link" to="/">Home</RouterLink>
-            </li>
-            <li>
-                <RouterLink class="nav-link" to="/chat">Chat general</RouterLink>
-            </li>
-            <li>
-                <RouterLink class="nav-link" to="/ingresar">Ingresar</RouterLink>
-            </li>
-            <li>
-                <RouterLink class="nav-link" to="/crear-cuenta">Registrarse</RouterLink>
-            </li>
-        </ul>
-    </div>
-</nav>
-<main>
-    <RouterView />
-</main>
-
+    <AppNavbar />
+    <main>
+        <RouterView />
+    </main>
+    <AppFooter />
 </template>
